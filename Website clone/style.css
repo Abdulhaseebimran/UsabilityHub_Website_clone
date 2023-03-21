@@ -28,7 +28,7 @@ h2 {
   font-size: 2rem;
 }
 
-h2 {
+h3 {
   font-size: 1.5rem;
 }
 
@@ -83,6 +83,7 @@ ul {
   padding: 12px 24px;
   box-shadow: 0 0 2px var(--secondary-text-color);
   transition: 0.2s ease-out;
+  text-align: center;
 }
 
 .primary-button:hover {
@@ -121,6 +122,7 @@ ul {
 .main-nav {
   margin-top: 20px;
   justify-content: space-between;
+  position: relative;
 }
 
 .company-logo img {
@@ -134,6 +136,10 @@ ul {
 .nav-link ul {
   justify-content: end;
   gap: 40px;
+}
+
+.nav-toggle{
+  display: none;
 }
 
 /* Header Section */
@@ -153,7 +159,7 @@ header {
   margin-top: 20px;
 }
 .header-right img {
-  width: 600px;
+  width: 100%;
 }
 
 .get-started-btn {
@@ -171,6 +177,7 @@ header {
 .logos {
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .logo {
@@ -187,6 +194,7 @@ header {
 }
 .features-header {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .features-heading {
@@ -196,7 +204,7 @@ header {
 .features-area {
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px;
+  gap: 20px;
   margin-top: 20px;
 }
 .features-card {
@@ -224,6 +232,10 @@ header {
   width: 100%;
 }
 
+#seconds-big-features{
+  flex-direction: row-reverse;
+}
+
 .features-desc {
   flex-direction: column;
   align-items: flex-start;
@@ -243,17 +255,23 @@ header {
 
 /* Example section */
 .example-section {
-  text-align: center;
+  /* text-align: center; */
+  padding: 80px var(--padding-inline-section);
 }
 
 .example-heading {
   margin-bottom: 20px;
 }
 
+.example-header{
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
 .example-card {
   width: 23%;
   position: relative;
-  min-height: 300px;
+  height: 300px;
   background: black;
   transition: 0.2s ease-out;
   background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),
@@ -267,6 +285,7 @@ header {
 .example-area {
   justify-content: space-between;
   margin-block: 30px;
+  flex-wrap: wrap;
 }
 
 .card-text {
@@ -286,6 +305,7 @@ header {
   flex-direction: column;
   gap: 30px;
   color: white;
+  text-align: center;
 }
 
 .cta-section{
@@ -325,3 +345,7 @@ footer{
   justify-content: center;
   gap: 30px;
 }
+
+/* @media screen and (max-width: 991px) {
+  
+} */
